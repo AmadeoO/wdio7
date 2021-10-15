@@ -4,7 +4,7 @@
   "description": "Web Driver IO 7",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run config/wdio.conf.js"
+    "testWeb": "npx wdio run config/web/a.suite.web.js"
   },
   "author": "Amadeo Garcia",
   "license": "ISC",
