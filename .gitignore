@@ -1,0 +1,4 @@
+node_modules
+
+# Allure report
+/allure-results
