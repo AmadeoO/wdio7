@@ -1,7 +1,8 @@
 const baseConfig = require('../wdio.conf.base');
+const suite = require('../../suites/suite');
 const merge = require('deepmerge');
 
-exports.config = merge(baseConfig.config, {
+exports.config = merge.all([baseConfig.config, suite.config, {
     maxInstances: 10,
     capabilities: [
         // maxInstances can get overwritten per capability.
@@ -14,4 +15,4 @@ exports.config = merge(baseConfig.config, {
             }
         }
     ],
-});
+}]);

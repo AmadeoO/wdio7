@@ -1,7 +1,4 @@
-const chromeConfig = require('./chrome.conf');
-const merge = require('deepmerge');
-
-exports.config = merge(chromeConfig.config, {
+exports.config = {
     // environment: process.env.TEST_ENV = 'uat',
     runner: 'local',
     specs: [
@@ -14,9 +11,12 @@ exports.config = merge(chromeConfig.config, {
         regression: [
             
         ],
+        api: [
+          
+        ],
     },
     exclude: [
         
     ],
     
-});
+};
